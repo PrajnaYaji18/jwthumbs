@@ -18,6 +18,7 @@ module Jwthumbs
       @clear_files = options[:clear_files] ||= true
       @seconds_between = options[:seconds_between] ||= @duration.to_i/10
       @thumb_width = options[:thumb_width] ||= 100 
+      @thumb_height = options[:thumb_height] ||= nil
       @spritefile = options[:spritefile] ||= "#{File.basename(@file_path, File.extname(@file_path))}_sprite.jpg"
       @vttfile = options[:vttfile_name] ||= "#{File.basename(@file_path, File.extname(@file_path))}_thumbs.vtt"
       @outdir = options[:thumb_outdir] ||= "output/thumbs_#{Time.now.to_i.to_s}"

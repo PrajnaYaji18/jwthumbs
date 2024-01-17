@@ -53,7 +53,7 @@ module Jwthumbs
 
 
     def process_images(images)
-      command ="mogrify -geometry #{@movie.thumb_width}x #{images.join(" ")}"
+      command ="mogrify -geometry #{@movie.thumb_width}x#{@movie.thumb_height} #{images.join(" ")}"
       Jwthumbs.logger.info(command)
       system(command)
     end
