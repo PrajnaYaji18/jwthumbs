@@ -1,7 +1,7 @@
-require "jwthumbs/version"
-require 'movie'
-require 'vtt'
-require 'shutter'
+require_relative "jwthumbs/version"
+require_relative 'movie'
+require_relative 'vtt'
+require_relative 'shutter'
 require 'logger'
 
 module Jwthumbs
